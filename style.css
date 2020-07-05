@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;}
+.butn{
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  background-color: transparent;
+  border: 2px solid steelblue;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.5em;
+}
+.butn:hover{
+  background: steelblue
+}
+.rest{
+  background: rgb(0,21,56);
+}
+ h3{
+   background: rgb(0,21,56);
+  color: #fff;
+  font-size: 2.5em;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 800;
+}
+
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+figcaption{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+img{
+  margin-top: 25px;
+  max-width:250px;
+  max-height: 250px;
+}
+section{
+  top: 50px;
+
+ 
+  widows: 100%;
+  min-height: 100vh;
+  background: rgb(0,21,56);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section:before{
+  content: '';
+  
+  left: 0;
+  width:100%;
+  height: 100%;
+ 
+  animation: fade-in 0.5s ease-in forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+section .content{
+  position: relative;
+  padding: 100px 50px 100px 150px;
+  box-sizing: border-box;
+  animation: left-in 0.5s ease-in forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+section .content h2{
+  color: #fff;
+  font-size: 3em;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 800;
+}
+section .content p{
+  color: #fff;
+  font-size: 1.2em;
+  font-family: 'Changa', sans-serif; 
+}
+section .content a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border: 2px solid steelblue;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  font-family: 'Gochi Hand', cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+section .content a:hover{
+  background: steelblue;
+}
+section .imgBox{
+  position: relative;
+  padding-right: 100px;
+}
+section .imgBox img{
+  max-width: 500px;
+  animation: left-in 0.5s ease-in forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+.main{
+ 
+  margin: 0 auto;
+  background-color: rgb(0,21,56)  ;
+}
+
+h1 {
+  padding-top: 40px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+p{
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Changa', sans-serif; 
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  text-align: center;
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: rgb(0,21,56);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #281E5D 40%, #2832C2 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes left-in{
+  0%{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 725px) {
+  section{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  section:before{
+    clip-path: polygon(0 0,100% 0, 100% 10%, 0 26%);
+  }
+  section .content{
+    padding: 50px;
+    margin-bottom: 30px;
+  }
+  section .content h2{
+    font-size: 1.5em;
+  }
+  section .content p{
+    font-size: 1em;
+  }
+  section .content a{
+    font-size: 0.8em;
+    padding: 15px 30px;
+  }
+  section .imgBox{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    margin-top: 20px;  
+  }
+  section .imgBox img{
+    max-width: 300px;
+  }
+  .flex{
+  justify-content: space-around;
+  flex-direction: column;
+  }
+  .flex figure{
+    margin: 10px auto;
+  }
+  .btn{
+    width: 50%;
+  }
+}
