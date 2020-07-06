@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  background: rgb(0,21,56);
 }
 
 *::before,
 *::after {
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
 .butn{
   text-align: center;
   display: block;
@@ -36,6 +37,7 @@
   font-size: 2.5em;
   font-family: 'Press Start 2P', cursive;
   font-weight: 800;
+  left: 3px;
 }
 
 
@@ -78,7 +80,7 @@ section:before{
   opacity: 0;
 }
 section .content{
-  position: relative;
+ 
   padding: 100px 50px 100px 150px;
   box-sizing: border-box;
   animation: left-in 0.5s ease-in forwards;
@@ -136,7 +138,7 @@ h1 {
    font-size: 2.5em;
   font-family: 'Press Start 2P', cursive;
   font-weight: 800;
-  text-align: left;
+  left: 3px;
 }
 p{
   color: white;
@@ -292,5 +294,14 @@ img {
   }
   .btn{
     width: 50%;
+  }
+  .main h1{
+    font-size: 1em;
+  }
+  .butn{
+    width: 50%
+  }
+  h3{
+    font-size: 1.5em;
   }
 }
