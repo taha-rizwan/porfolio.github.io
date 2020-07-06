@@ -119,12 +119,14 @@ section .content a:hover{
 section .imgBox{
   position: relative;
   padding-right: 100px;
+	
 }
 section .imgBox img{
   max-width: 500px;
   animation: left-in 0.5s ease-in forwards;
   animation-delay: 1.5s;
   opacity: 0;
+	
 }
 .main{
  
@@ -281,9 +283,11 @@ img {
     align-items: center;
     padding-right: 0;
     margin-top: 20px;  
+	
   }
   section .imgBox img{
     max-width: 300px;
+
   }
   .flex{
   justify-content: space-around;
